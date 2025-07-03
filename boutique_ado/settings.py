@@ -30,6 +30,8 @@ ALLOWED_HOSTS = ['.herokuapp.com', '127.0.0.1', 'localhost']
 
 # http://localhost:8000/accounts/login/
 
+# cp -r C:/Users/Rando/AppData/Local/Programs/Python/Python312/Lib/site-packages/allauth/templates/* ./templates/allauth
+
 
 # Application definition
 
