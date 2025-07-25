@@ -6,7 +6,7 @@ from django.conf import settings
 from .forms import OrderForm
 from .models import Order, OrderLineItem
 from products.models import Product
-from profile.forms import UserProfileForm
+from profiles.forms import UserProfileForm
 from profiles.models import UserProfile
 from bag.contexts import bag_contents
 
@@ -154,7 +154,7 @@ def checkout_success(request, order_number):
         order.save()
 
     if save_info:
-        profile data = {
+        profile_data = {
             'default_phone_number': order.phone_number,
             'default_street_address1': order.street_address1,
             'default_street_address2': order.street_address2,
